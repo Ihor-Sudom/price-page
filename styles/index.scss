@@ -1,0 +1,19 @@
+@import 'variables.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Montserrat, "sans-serif";
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: $page-background-color;
+}
+
+@import "price-card.scss";

@@ -1,0 +1,131 @@
+@import 'variables.scss';
+
+.price-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 380px;
+  height: 770px;
+  margin-right: 18px;
+  background-color: $price-card-background-color;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.08);
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 33px 140px;
+
+    &_bold-text {
+      font-size: 35px;
+      line-height: 43px;
+      font-weight: 700;
+      color: $text-color-white;
+    }
+
+    &_usual-text {
+      font-size: 20px;
+      line-height: 24px;
+      color: $text-color-white;
+    }
+  }
+
+  &__price {
+    width: 380px;
+    padding: 19px 110px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 67px;
+    color: $text-color-white;
+
+    &_green {
+      background-color: $price-card-price-green;
+    }
+  
+    &_blue {
+      background-color: $price-card-price-blue;
+    }
+
+    &_coral {
+      background-color: $price-card-price-coral;
+    }
+  }
+
+  &__discription {
+    margin: 40px 26px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: $text-color-white;
+  }
+
+  &__options-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    &_item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 380px;
+      height: 50px;
+
+      &:nth-child(odd) {
+        background-color: $price-card-list-background-color;
+      }
+    }
+
+    &_image {
+      margin-left: 22px;
+    }
+
+    &_text {
+      margin-left: 22px;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 50px;
+      color: $text-color-white;
+    }
+  }
+
+  &__order-btn {
+    margin-top: 39px;
+    height: 40px;
+    color: $text-color-white;
+    border-radius: 20px;
+
+    &_green {
+      background: $button-green;
+    }
+
+    &_blue {
+      background-color: $button-blue;
+    }
+
+    &_coral {
+      background-color: $button-coral;
+    }
+  }
+}
+
+.sticker {
+  position: absolute;
+  width: 147px;
+  height: 25px;
+  right: -30px;
+  top: 30px;
+  transform: rotate(45deg);
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  background-color: $sticker-background-color;
+  font-weight: bold;
+  color: $text-color-white;
+}
